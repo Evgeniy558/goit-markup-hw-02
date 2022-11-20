@@ -4,38 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zadanie domowe studentów #1</title>
+    <title>Main page</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!--for css:font-family: 'Kolker Brush', cursive;-->
+    <!-- * font-family: 'Roboto', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Raleway', sans-serif; -->
   </head>
 
   <body>
     <header>
-      <nav class="menu">
+      <nav>
         <ul>
-          <li><a href="">WebStudio</a></li>
-          <li><a href="">Agencja</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Kontakt</a></li>
+          <li>
+            <a href="studio.html" class="nav-webstudio"
+              ><span>Web</span>Studio</a
+            >
+          </li>
+          <li><a href="" class="nav-menu">Agencja</a></li>
+          <li><a href="portfolio.html" class="nav-menu">Portfolio</a></li>
+          <li><a href="" class="nav-menu">Kontakty</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="menu-contacts">
         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a href="tel:+48111111111">+48 111 111 111</a></li>
       </ul>
     </header>
     <main>
-      <section>
+      <section class="main-section">
         <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button type="button">Zamów usługe</button>
       </section>
 
-      <section>
+      <section class="information">
         <h3>LOREM IPSUM</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
@@ -60,7 +72,7 @@
           sem. Sed non sodales dui. Interdum et malesuada
         </p>
       </section>
-      <section>
+      <section class="description">
         <h2>Czym się zajmujemy</h2>
         <ul>
           <li>
@@ -74,7 +86,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="team">
         <h2>Nasz zespół</h2>
         <figure>
           <img
@@ -84,7 +96,7 @@
             alt="Product designer"
           />
           <figcaption>
-            John Doe <br />
+            <span>John Doe</span> <br />
             Product Designer
           </figcaption>
         </figure>
@@ -97,7 +109,7 @@
             alt="Frontend developer"
           />
           <figcaption>
-            John Doe <br />
+            <span> John Doe </span><br />
             Frontend Developer
           </figcaption>
         </figure>
@@ -110,7 +122,7 @@
             alt="Marketing"
           />
           <figcaption>
-            John Doe <br />
+            <span> John Doe</span> <br />
             Marketing
           </figcaption>
         </figure>
@@ -123,19 +135,31 @@
             alt="UI designer"
           />
           <figcaption>
-            John Doe <br />
+            <span>John Doe </span><br />
             UI Designer
           </figcaption>
         </figure>
       </section>
     </main>
     <footer>
-      <a href="">WebStudio</a>
+      <a href="studio.html" class="nav-webstudio-footer"
+        ><span>Web</span>Studio</a
+      >
       <address>
         <ul>
-          <li><p>m. Warszawa, Aleje Jerozolimskie 21</p></li>
-          <li><a href="info@example.com">info@example.com</a></li>
-          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+          <li>
+            <p class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</p>
+          </li>
+          <li>
+            <a class="footer-contacts" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+          <li>
+            <a class="footer-contacts" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
