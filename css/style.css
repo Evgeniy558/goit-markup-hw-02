@@ -2,17 +2,32 @@
 in files index.html and porfolio.html */
 
 /* body */
+:root {
+  --text-color: #212121;
+  --background-color: white;
+  --text-selection-color: red;
+  --background-selection-color: chartreuse;
+}
+
+*::selection {
+  color: var(--text-selection-color);
+  background-color: var(--background-selection-color);
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: var(--text-color);
+  background-color: var(--background-color);
   font-size: 14px;
   letter-spacing: 0.03em;
-  /* width: 1600px;
+}
+
+/* width: 1600px;
   height: 1880px;
   border: solid 1px; */
-}
+
 /* header */
-header {
+.header-index-portfolio {
   width: 1600px;
   height: 80px;
   border: solid 1px;
@@ -23,7 +38,7 @@ header {
   display: flex;
   align-items: center;
 }
-header ul {
+.header-index-portfolio ul {
   list-style: none;
   display: flex;
 }
@@ -68,13 +83,13 @@ header ul {
 
 /* footer */
 
-footer {
+.footer {
   width: 1600px;
   height: 252px;
   background-color: #2f303a;
 }
 
-footer .nav-webstudio-footer {
+.footer .nav-webstudio-footer {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   text-decoration: none;
@@ -86,23 +101,23 @@ footer .nav-webstudio-footer {
   color: #2196f3;
 }
 
-address ul {
+.address ul {
   list-style: none;
   padding-left: 215px;
 }
-address .footer-address {
+.address .footer-address {
   color: #ffffff;
   font-style: normal;
   letter-spacing: 0.03em;
 }
 
-address .footer-contacts {
+.address .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   text-decoration: none;
 }
-address .footer-contacts:hover,
-address .footer-contacts:focus {
+.address .footer-contacts:hover,
+.address .footer-contacts:focus {
   color: #2196f3;
 }
 
