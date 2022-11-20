@@ -1,5 +1,5 @@
 /* common styles css for parts body, header and footer 
-in files studio.html and porfolio.html */
+in files index.html and porfolio.html */
 
 /* body */
 body {
@@ -106,7 +106,7 @@ address .footer-contacts:focus {
   color: #2196f3;
 }
 
-/* styles css for file studio.html */
+/* styles css for file index.html */
 .main-section {
   height: 600px;
   width: 1600px;
